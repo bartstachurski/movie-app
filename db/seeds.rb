@@ -11,3 +11,9 @@
   actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
   actor.save
 end
+
+10.times do
+  random_year = rand(1950..2019)
+  movie = Movie.new(title: FFaker::Movie.title, year: random_year, plot: FFaker::Lorem.paragraph)
+  movie.save
+end
