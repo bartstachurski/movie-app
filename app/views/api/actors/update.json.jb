@@ -1,0 +1,1 @@
+{message: "Actor #{@actor.first_name} #{@actor.last_name} updated!"}
