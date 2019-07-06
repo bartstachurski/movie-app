@@ -1,0 +1,1 @@
+{message: @actor.errors.full_messages}
