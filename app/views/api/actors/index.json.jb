@@ -5,6 +5,8 @@
   known_for: actor.known_for,
   id: actor.id,
   age: actor.age,
-  gender: actor.gender
+  gender: actor.gender,
+  movie_title: actor.movie.title,
+  movie_plot: actor.movie.plot
   }
 end

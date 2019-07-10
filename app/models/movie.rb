@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
+  has_many :actors
   validates :year, presence: true
   validates :year, numericality: { greater_than: 1878 }
   validates :title, presence: true
