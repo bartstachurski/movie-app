@@ -1,4 +1,7 @@
 class Api::ActorsController < ApplicationController
+  before_action :authenticate_user
+  before_action :authenticate_admin, only: [:create, :update, :destroy]
+  
   def index
     # index sorts actors by eldest to youngest
     @actors = Actor.order(age: :desc)
